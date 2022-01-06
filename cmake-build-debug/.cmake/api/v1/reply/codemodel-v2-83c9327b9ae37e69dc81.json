@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Thermo-Elastic",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Thermo-Elastic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Thermo-Elastic-Debug-a68f896977f4e3af8085.json",
+					"name" : "Thermo-Elastic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "debug::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-debug-Debug-578980d5a14acb41b778.json",
+					"name" : "debug",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "distclean::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-distclean-Debug-debebb8eda6aff53df62.json",
+					"name" : "distclean",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "info::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-info-Debug-c4a83e6df7114c549c16.json",
+					"name" : "info",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "release::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-release-Debug-b49198c82a35e23e0d7f.json",
+					"name" : "release",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "run::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-run-Debug-53a9ac5ae7d5214e654b.json",
+					"name" : "run",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "runclean::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-runclean-Debug-5730ff52afb5375563c4.json",
+					"name" : "runclean",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "strip_comments::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-strip_comments-Debug-55c6916dc38975b8e6e6.json",
+					"name" : "strip_comments",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/CLionProjects/Thermo-Elastic/cmake-build-debug",
+		"source" : "/home/ubuntu/CLionProjects/Thermo-Elastic"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
