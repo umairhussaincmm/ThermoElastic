@@ -101,9 +101,34 @@ void ThermoElastic::assemble_system() {
                 }
                 //RHS
                 double EelastR = fe_values[u].value(i,q)*rhs_values[q][0]+fe_values[v].value(i,q)*rhs_values[q][1];
+                double Kn = fe_values[T].gradient(i,q)*old_sol_grad_T[q];
+                double Mn = fe_values[T].value(i,q)*old_sol_val_T[q]/kappa;
+                double gamm = alpha*(3*lambda_values[q]+2*mu_values[q]);
+                double eta = gamm*Tsf/k;
+                double Pn = fe_values[T].value(i,q)*old_sol_grad_u[q][0]*eta;
+                double Qn = fe_values[T].value(i,q)*old_sol_grad_v[q][1]*eta;
                 double EheatR = -time_step*(1-theta)*Kn + Mn + Pn + Qn;
                 cell_rhs(i) += (EelastR+EheatR)*fe_values.JxW(q);
             }
         }
+        cell->get_dof_indices(local_dof_indices);
+        for (unsigned int i = 0; i < dofs_per_cell; ++i)
+        {
+            for (unsigned int j = 0; j < dofs_per_cell; ++j)
+                system_matrix.add(local_dof_indices[i],
+                                    local_dof_indices[j],
+                                    cell_matrix(i, j));
+            system_rhs(local_dof_indices[i]) += cell_rhs(i);
+        }
     }
+    //Applying zero BC
+    std::map<types::global_dof_index, double> boundary_values;
+    VectorTools::interpolate_boundary_values(dof_handler,
+                                             55,
+                                             Functions::ZeroFunction<2>(3),
+                                             boundary_values);
+    MatrixTools::apply_boundary_values(boundary_values,
+                                       system_matrix,
+                                       solution,
+                                       system_rhs);
 }

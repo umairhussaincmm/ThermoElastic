@@ -9,6 +9,10 @@ SET(TARGET_SRC
         ThermoElastic.cpp
         setup_system.cpp
         assemble_system.cpp
+        solve.cpp
+        output_results.cpp
+        run.cpp
+        Initial_values.cpp
         )
 
 SET(DEAL_II_DIR "/home/ubuntu/deal.II/installed/") #Added this line since normal one wasn't working!

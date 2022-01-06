@@ -2,6 +2,7 @@
 #include "ThermoElastic.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    ThermoElastic thermoelastic;
+    thermoelastic.run();
     return 0;
 }

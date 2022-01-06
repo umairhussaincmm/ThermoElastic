@@ -20,19 +20,19 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 29,
+				"line" : 33,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 189,
+				"line" : 146,
 				"parent" : 1
 			}
 		]
 	},
-	"id" : "distclean::@6890427a1f51a3e7e1df",
-	"name" : "distclean",
+	"id" : "debug::@6890427a1f51a3e7e1df",
+	"name" : "debug",
 	"paths" : 
 	{
 		"build" : ".",
@@ -60,13 +60,13 @@
 		{
 			"backtrace" : 2,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/distclean",
+			"path" : "cmake-build-debug/CMakeFiles/debug",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/distclean.rule",
+			"path" : "cmake-build-debug/CMakeFiles/debug.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

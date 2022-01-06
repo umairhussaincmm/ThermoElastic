@@ -41,8 +41,7 @@ private:
   void setup_system();
   void assemble_system();
   void solve();
-  void refine_grid();
-  void output_results(const unsigned int cycle) const;
+  void output_results();
   Triangulation<2> triangulation;
   DoFHandler<2>    dof_handler;
   FESystem<2> fe;
@@ -53,8 +52,18 @@ private:
   Vector<double> system_rhs;
   double       time;
   const double final_time, time_step;
+  const int timestep_number;
   const double theta;
   const double alpha, k, Tsf, rho, ce, kappa;
+};
+
+class InitialValues : public Function<2>
+{
+public:
+    InitialValues(): Function<2>(3)
+    {}
+    virtual void vector_value(const Point<2> &p,
+                              Vector<double> & value) const override;
 };
 
 

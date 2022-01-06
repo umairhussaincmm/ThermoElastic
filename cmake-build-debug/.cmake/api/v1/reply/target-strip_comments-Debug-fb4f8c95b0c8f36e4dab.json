@@ -20,19 +20,19 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 29,
+				"line" : 33,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 157,
+				"line" : 202,
 				"parent" : 1
 			}
 		]
 	},
-	"id" : "release::@6890427a1f51a3e7e1df",
-	"name" : "release",
+	"id" : "strip_comments::@6890427a1f51a3e7e1df",
+	"name" : "strip_comments",
 	"paths" : 
 	{
 		"build" : ".",
@@ -60,13 +60,13 @@
 		{
 			"backtrace" : 2,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/release",
+			"path" : "cmake-build-debug/CMakeFiles/strip_comments",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/release.rule",
+			"path" : "cmake-build-debug/CMakeFiles/strip_comments.rule",
 			"sourceGroupIndex" : 1
 		}
 	],
