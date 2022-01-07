@@ -41,7 +41,7 @@ private:
   void setup_system();
   void assemble_system();
   void solve();
-  void output_results();
+  void output_results(const unsigned int timestep_number) const;
   Triangulation<2> triangulation;
   DoFHandler<2>    dof_handler;
   FESystem<2> fe;

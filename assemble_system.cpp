@@ -122,11 +122,23 @@ void ThermoElastic::assemble_system() {
         }
     }
     //Applying zero BC
+    ComponentMask u_mask = fe.component_mask(u);
+    ComponentMask v_mask = fe.component_mask(v);
+    ComponentMask T_mask = fe.component_mask(T);
     std::map<types::global_dof_index, double> boundary_values;
-    VectorTools::interpolate_boundary_values(dof_handler,
-                                             55,
-                                             Functions::ZeroFunction<2>(3),
-                                             boundary_values);
+    VectorTools::interpolate_boundary_values (dof_handler,
+                                              55,
+                                              ConstantFunction<2>(0., 3),
+                                              boundary_values,u_mask);
+    VectorTools::interpolate_boundary_values (dof_handler,
+                                              55,
+                                              ConstantFunction<2>(0., 3),
+                                              boundary_values,v_mask);
+    VectorTools::interpolate_boundary_values (dof_handler,
+                                              55,
+                                              ConstantFunction<2>(10., 3),
+                                              boundary_values,T_mask);
+
     MatrixTools::apply_boundary_values(boundary_values,
                                        system_matrix,
                                        solution,

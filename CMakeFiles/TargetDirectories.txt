@@ -1,0 +1,10 @@
+/home/ubuntu/CLionProjects/Thermo-Elastic/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/CLionProjects/Thermo-Elastic/CMakeFiles/edit_cache.dir
+/home/ubuntu/CLionProjects/Thermo-Elastic/CMakeFiles/info.dir
+/home/ubuntu/CLionProjects/Thermo-Elastic/CMakeFiles/strip_comments.dir
+/home/ubuntu/CLionProjects/Thermo-Elastic/CMakeFiles/run.dir
+/home/ubuntu/CLionProjects/Thermo-Elastic/CMakeFiles/Thermo-Elastic.dir
+/home/ubuntu/CLionProjects/Thermo-Elastic/CMakeFiles/debug.dir
+/home/ubuntu/CLionProjects/Thermo-Elastic/CMakeFiles/release.dir
+/home/ubuntu/CLionProjects/Thermo-Elastic/CMakeFiles/runclean.dir
+/home/ubuntu/CLionProjects/Thermo-Elastic/CMakeFiles/distclean.dir

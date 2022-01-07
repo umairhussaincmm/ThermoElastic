@@ -7,7 +7,7 @@ void ThermoElastic::setup_system() {
     const Point<2,double> p1(0,0);
     const Point<2,double> p2(12,3);
     GridGenerator::hyper_rectangle(triangulation, p1, p2);
-    triangulation.refine_global(4); //refining
+    triangulation.refine_global(6); //refining
 
     for (auto &cell : triangulation.active_cell_iterators())
         for (unsigned int face_n = 0;
@@ -18,7 +18,7 @@ void ThermoElastic::setup_system() {
                     cell->face(face_n)->set_boundary_id(55);
 
                 else if (std::fabs(cell->face(face_n)->center()[0] - 12) < 1e-10 )
-                    cell->face(face_n)->set_boundary_id(55);
+                    cell->face(face_n)->set_boundary_id(555);
             }
 
     dof_handler.distribute_dofs(fe);

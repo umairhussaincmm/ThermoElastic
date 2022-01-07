@@ -1,0 +1,14 @@
+# ninja log v5
+0	58	0	/home/ubuntu/CLionProjects/Thermo-Elastic/cmake-build-debug/CMakeFiles/debug	54932c2aa9f33e94
+0	58	0	CMakeFiles/debug	54932c2aa9f33e94
+0	101	0	CMakeFiles/debug	54932c2aa9f33e94
+0	101	0	/home/ubuntu/CLionProjects/Thermo-Elastic/cmake-build-debug/CMakeFiles/debug	54932c2aa9f33e94
+12	18340	1641475272544758032	CMakeFiles/Thermo-Elastic.dir/output_results.cpp.o	ddd246297485f68e
+12	18633	1641475272840758032	CMakeFiles/Thermo-Elastic.dir/run.cpp.o	9256fa3577ed84a2
+10	18642	1641475272840758032	CMakeFiles/Thermo-Elastic.dir/main.cpp.o	3281c1b6c92d2559
+11	18784	1641475272988758032	CMakeFiles/Thermo-Elastic.dir/ThermoElastic.cpp.o	d83c11c93db11f58
+11	19605	1641475273812758032	CMakeFiles/Thermo-Elastic.dir/assemble_system.cpp.o	6430495f3fd5a573
+11	20134	1641475274340758032	CMakeFiles/Thermo-Elastic.dir/setup_system.cpp.o	231380f63cb605e0
+12	20681	1641475274884758032	CMakeFiles/Thermo-Elastic.dir/solve.cpp.o	cf1bd79049f30ebf
+18360	30724	1641475284928758032	CMakeFiles/Thermo-Elastic.dir/Initial_values.cpp.o	a1b6350592b825f1
+30725	33658	1641475287836758032	Thermo-Elastic	7cae619850865eb8
