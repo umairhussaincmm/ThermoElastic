@@ -14,6 +14,6 @@ void ThermoElastic::output_results(const unsigned int timestep_number) const{
     //std::cout<< "Output Number: " << timestep_number << std::endl;
     data_out.add_data_vector(solution, solution_names);
     data_out.build_patches();
-    std::ofstream output("results/solution-" + Utilities::int_to_string(timestep_number, 3) + ".vtk");
+    std::ofstream output("results/trial2/solution-" + Utilities::int_to_string(timestep_number, 3) + ".vtk");
     data_out.write_vtk(output);
 }

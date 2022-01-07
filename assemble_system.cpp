@@ -100,7 +100,7 @@ void ThermoElastic::assemble_system() {
                     cell_matrix(i, j) += (Eelast + Eheat)*fe_values.JxW(q);
                 }
                 //RHS
-                double EelastR = fe_values[u].value(i,q)*rhs_values[q][0]+fe_values[v].value(i,q)*rhs_values[q][1];
+                double EelastR = fe_values[u].value(i,q)*rhs_values[q][0]+fe_values[v].value(i,q)*0.; //rhs_values[q][1];
                 double Kn = fe_values[T].gradient(i,q)*old_sol_grad_T[q];
                 double Mn = fe_values[T].value(i,q)*old_sol_val_T[q]/kappa;
                 double gamm = alpha*(3*lambda_values[q]+2*mu_values[q]);
